@@ -21,5 +21,5 @@ const form=document.querySelector('#enquiry');
 form?.addEventListener('submit',e=>{
  e.preventDefault(); const d=new FormData(form);
  const text=`Hello Seal Kraft,\n\nName: ${d.get('name')}\nPhone: ${d.get('phone')}\nLocation: ${d.get('location')}\nRequirement: ${d.get('service')}\nMessage: ${d.get('message')}`;
- window.open('https://wa.me/919999999999?text='+encodeURIComponent(text),'_blank');
+ window.open('https://wa.me/919987028576?text='+encodeURIComponent(text),'_blank');
 });
