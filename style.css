@@ -34,6 +34,12 @@
 @media(max-width:900px){.site-header{height:76px}.nav-links.open{top:76px;box-shadow:0 16px 24px rgba(7,17,23,.12)}.nav-links a{padding:8px 0}.hero-content{padding:55px 0}.hero h1{font-size:clamp(50px,9vw,76px)}}
 @media(max-width:600px){.topline{font-size:9px}.site-header{height:70px}.nav-links.open{top:70px}.logo b{font-size:17px}.logo small{font-size:6px}.hero{min-height:640px}.hero p{font-size:15px}.hero-stats{gap:16px}.hero-stats b{font-size:19px}.hero-actions .btn{width:100%}.floating-action{bottom:16px;width:50px;height:50px}.call{left:16px}.wa{right:16px}}
 
+/* Small-screen icon alignment */
+.service-arrow{width:30px;height:30px;border:1px solid currentColor;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1}
+.play{font-size:17px;line-height:1;padding:0 0 0 2px;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.link{display:inline-flex;align-items:center;gap:6px;line-height:1.4}
+@media(max-width:600px){.service-arrow{width:28px;height:28px;right:18px;bottom:18px;font-size:14px}.play{width:50px;height:50px;font-size:15px}.video-card{overflow:hidden}.video-thumb{height:180px}.link{font-size:12px;gap:5px}.service-card .service-icon{font-size:27px;margin-bottom:18px}}
+
 /* Executive visual system */
 :root{--ink:#122a31;--muted:#607277;--paper:#f5f7f5;--teal:#08777d;--dark:#071a20;--line:#dce5e2;--gold:#b79a5d}
 body{background:var(--paper);color:var(--ink);letter-spacing:.006em}
