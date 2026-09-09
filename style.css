@@ -34,3 +34,27 @@
 @media(max-width:900px){.site-header{height:76px}.nav-links.open{top:76px;box-shadow:0 16px 24px rgba(7,17,23,.12)}.nav-links a{padding:8px 0}.hero-content{padding:55px 0}.hero h1{font-size:clamp(50px,9vw,76px)}}
 @media(max-width:600px){.topline{font-size:9px}.site-header{height:70px}.nav-links.open{top:70px}.logo b{font-size:17px}.logo small{font-size:6px}.hero{min-height:640px}.hero p{font-size:15px}.hero-stats{gap:16px}.hero-stats b{font-size:19px}.hero-actions .btn{width:100%}.floating-action{bottom:16px;width:50px;height:50px}.call{left:16px}.wa{right:16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-bg{will-change:auto}.btn,.nav-button,.service-card,.video-card,.menu-btn span{transition:none}}
+
+/* Premium type scale */
+body{font-size:16px;letter-spacing:.005em}
+.nav-links{font-size:13px;letter-spacing:.01em}
+.topline{font-size:11px}
+.hero p{font-size:18px;line-height:1.75;letter-spacing:.01em}
+.kicker,.eyebrow{font-size:11px;letter-spacing:.2em}
+.intro p,.section-title>p{font-size:16px;line-height:1.8}
+.service-card h3{font-size:21px;letter-spacing:-.02em}
+.service-card p{font-size:14px;line-height:1.7}
+.split-copy p{font-size:16px;line-height:1.8}
+.split-copy li{font-size:14px;padding:13px 0}
+.link,.btn,.nav-button{font-size:13px;letter-spacing:.02em}
+.video-copy small{font-size:10px}
+.video-copy h3{font-size:19px}
+.video-copy span{font-size:12px}
+.footer p,.footer-grid>div>a:not(.logo){font-size:13px}
+.footer h4{font-size:12px}
+.page-hero p,.three-values p,.cap-grid p,.service-list p,.contact-page p{font-size:15px;line-height:1.8}
+.three-values b,.cap-grid span,.service-list .service-number,.contact-details small,label{font-size:11px;letter-spacing:.13em}
+.three-values h3,.cap-grid h3{font-size:22px}
+.service-list h2{font-size:31px}
+.contact-details a,.contact-details span{font-size:16px}
+@media(max-width:600px){body{font-size:15px}.topline{font-size:10px}.hero p{font-size:16px}.kicker,.eyebrow{font-size:10px}.intro p,.section-title>p,.split-copy p{font-size:15px}.service-card h3{font-size:20px}.service-card p{font-size:14px}.page-hero p,.three-values p,.cap-grid p,.service-list p,.contact-page p{font-size:15px}.service-list h2{font-size:25px}}
