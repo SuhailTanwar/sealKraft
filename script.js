@@ -1,6 +1,22 @@
 const btn=document.querySelector('.menu-btn'), nav=document.querySelector('.nav-links');
-btn?.addEventListener('click',()=>{nav.classList.toggle('open');btn.classList.toggle('open')});
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
+const closeMenu=()=>{
+ nav?.classList.remove('open');
+ btn?.classList.remove('open');
+ btn?.setAttribute('aria-expanded','false');
+};
+btn?.setAttribute('aria-expanded','false');
+btn?.addEventListener('click',()=>{
+ const isOpen=nav?.classList.toggle('open') ?? false;
+ btn.classList.toggle('open',isOpen);
+ btn.setAttribute('aria-expanded',String(isOpen));
+});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',closeMenu));
+document.addEventListener('click',e=>{
+ if(nav?.classList.contains('open') && !nav.contains(e.target) && !btn?.contains(e.target)) closeMenu();
+});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape') closeMenu();
+});
 const form=document.querySelector('#enquiry');
 form?.addEventListener('submit',e=>{
  e.preventDefault(); const d=new FormData(form);
