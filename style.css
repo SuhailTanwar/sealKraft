@@ -40,6 +40,24 @@
 .link{display:inline-flex;align-items:center;gap:6px;line-height:1.4}
 @media(max-width:600px){.service-arrow{width:28px;height:28px;right:18px;bottom:18px;font-size:14px}.play{width:50px;height:50px;font-size:15px}.video-card{overflow:hidden}.video-thumb{height:180px}.link{font-size:12px;gap:5px}.service-card .service-icon{font-size:27px;margin-bottom:18px}}
 
+/* Scroll and navigation motion */
+html{scroll-behavior:smooth}
+body{opacity:1;transition:opacity .28s ease}
+body.page-leaving{opacity:0}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,.61,.36,1)}
+.reveal.is-visible{opacity:1;transform:none}
+.reveal-stagger>*{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s cubic-bezier(.22,.61,.36,1)}
+.reveal-stagger.is-visible>*{opacity:1;transform:none}
+.reveal-stagger.is-visible>*:nth-child(2){transition-delay:.06s}
+.reveal-stagger.is-visible>*:nth-child(3){transition-delay:.12s}
+.reveal-stagger.is-visible>*:nth-child(4){transition-delay:.18s}
+.reveal-stagger.is-visible>*:nth-child(5){transition-delay:.24s}
+.reveal-stagger.is-visible>*:nth-child(6){transition-delay:.3s}
+.hero-content{animation:hero-enter .8s cubic-bezier(.22,.61,.36,1) both}
+@keyframes hero-enter{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.service-card:hover,.video-card:hover{transform:translateY(-6px)}
+@media(prefers-reduced-motion:reduce){body,.reveal,.reveal-stagger>*,.hero-content{animation:none;transition:none}.reveal,.reveal-stagger>*{opacity:1;transform:none}html{scroll-behavior:auto}}
+
 /* Executive visual system */
 :root{--ink:#122a31;--muted:#607277;--paper:#f5f7f5;--teal:#08777d;--dark:#071a20;--line:#dce5e2;--gold:#b79a5d}
 body{background:var(--paper);color:var(--ink);letter-spacing:.006em}
