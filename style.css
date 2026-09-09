@@ -58,3 +58,16 @@ body{font-size:16px;letter-spacing:.005em}
 .service-list h2{font-size:31px}
 .contact-details a,.contact-details span{font-size:16px}
 @media(max-width:600px){body{font-size:15px}.topline{font-size:10px}.hero p{font-size:16px}.kicker,.eyebrow{font-size:10px}.intro p,.section-title>p,.split-copy p{font-size:15px}.service-card h3{font-size:20px}.service-card p{font-size:14px}.page-hero p,.three-values p,.cap-grid p,.service-list p,.contact-page p{font-size:15px}.service-list h2{font-size:25px}}
+
+/* Compact service catalogue */
+.services-catalog{background:#f7f8f5;padding:72px 0}
+.services-catalog .service-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;border:0}
+.services-catalog .service-list article{display:flex;gap:22px;min-height:0;padding:26px 28px;background:#fff;border:1px solid var(--line);border-radius:2px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.services-catalog .service-list article:hover{border-color:#a7c3c1;box-shadow:0 12px 26px rgba(7,17,23,.08);transform:translateY(-2px)}
+.services-catalog .service-list .service-number{flex:0 0 30px;padding-top:3px;font-size:12px;letter-spacing:.08em}
+.services-catalog .service-list article>div{min-width:0}
+.services-catalog .service-list h2{font-size:22px;line-height:1.2;margin:0 0 9px}
+.services-catalog .service-list p{font-size:14px;line-height:1.55;margin:0;max-width:none}
+.services-catalog .service-list .link{font-size:12px;margin-top:14px}
+@media(max-width:900px){.services-catalog{padding:58px 0}.services-catalog .service-list{grid-template-columns:1fr}}
+@media(max-width:600px){.services-catalog{padding:45px 0}.services-catalog .service-list article{gap:14px;padding:21px 18px}.services-catalog .service-list h2{font-size:20px}.services-catalog .service-list p{font-size:14px}.services-catalog .service-list .link{margin-top:11px}}
