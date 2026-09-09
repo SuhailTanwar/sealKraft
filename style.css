@@ -92,6 +92,7 @@ h2{font-size:clamp(38px,4.4vw,64px)}
 .featured-service-label{display:block;color:#a9d5d2;font:800 10px Manrope;letter-spacing:.2em}
 .featured-service h3{margin:13px 0 10px;font:800 clamp(26px,3vw,38px) Manrope;letter-spacing:-.04em}
 .featured-service p{margin:0;color:#c9dcdd;font-size:15px;line-height:1.7}
+.featured-service p+p{margin-top:12px}
 .featured-service-link{display:inline-flex;align-items:center;gap:9px;margin-top:20px;color:#fff;font-size:12px;font-weight:800;letter-spacing:.03em}
 .featured-service-link b{display:inline-flex;width:25px;height:25px;align-items:center;justify-content:center;border:1px solid #80b8b7;border-radius:50%;font-size:14px}
 .featured-service-mark{position:relative;display:flex;flex-direction:column;align-items:flex-end;color:#8fc5c3;text-align:right}
