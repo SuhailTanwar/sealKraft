@@ -160,5 +160,16 @@ body{font-size:16px;letter-spacing:.005em}
 .services-catalog .service-list h2{font-size:22px;line-height:1.2;margin:0 0 9px}
 .services-catalog .service-list p{font-size:14px;line-height:1.55;margin:0;max-width:none}
 .services-catalog .service-list .link{font-size:12px;margin-top:14px}
+.civil-services{background:#fff}
+.civil-services .section-title{align-items:flex-start}
+.civil-services .section-title>p{max-width:520px}
+.civil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.civil-grid article{padding:26px 27px;border:1px solid var(--line);background:#f7f9f7}
+.civil-grid span{color:var(--teal);font:800 11px Manrope;letter-spacing:.12em}
+.civil-grid h3{margin:14px 0 9px;font-size:20px}
+.civil-grid p{margin:0;color:var(--muted);font-size:14px;line-height:1.65}
+.civil-cta{margin-top:28px}
 @media(max-width:900px){.services-catalog{padding:58px 0}.services-catalog .service-list{grid-template-columns:1fr}}
 @media(max-width:600px){.services-catalog{padding:45px 0}.services-catalog .service-list article{gap:14px;padding:21px 18px}.services-catalog .service-list h2{font-size:20px}.services-catalog .service-list p{font-size:14px}.services-catalog .service-list .link{margin-top:11px}}
+@media(max-width:900px){.civil-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.civil-services{padding:72px 0}.civil-grid{grid-template-columns:1fr}.civil-grid article{padding:22px}.civil-cta{width:100%;text-align:center}}
