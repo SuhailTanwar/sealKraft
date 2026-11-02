@@ -34,6 +34,20 @@
 @media(max-width:900px){.site-header{height:76px}.nav-links.open{top:76px;box-shadow:0 16px 24px rgba(7,17,23,.12)}.nav-links a{padding:8px 0}.hero-content{padding:55px 0}.hero h1{font-size:clamp(50px,9vw,76px)}}
 @media(max-width:600px){.topline{font-size:9px}.site-header{height:70px}.nav-links.open{top:70px}.logo b{font-size:17px}.logo small{font-size:6px}.hero{min-height:640px}.hero p{font-size:15px}.hero-stats{gap:16px}.hero-stats b{font-size:19px}.hero-actions .btn{width:100%}.floating-action{bottom:16px;width:50px;height:50px}.call{left:16px}.wa{right:16px}}
 
+.thermal-feature{background:#fff}
+.thermal-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:90px;align-items:center}
+.thermal-copy h2{margin:22px 0}
+.thermal-copy>p{max-width:680px;color:var(--muted);font-size:16px;line-height:1.8}
+.thermal-copy .btn{margin-top:16px}
+.thermal-outcomes{padding:30px;background:#f1efed;border:1px solid var(--line)}
+.thermal-outcomes-label{display:block;margin-bottom:14px;color:#686260;font:800 10px Manrope;letter-spacing:.18em}
+.thermal-outcomes article{display:grid;grid-template-columns:34px 1fr;gap:16px;padding:20px 0;border-top:1px solid #d5d0cd}
+.thermal-outcomes article>b{color:#77716e;font:800 12px Manrope}
+.thermal-outcomes h3{margin:0 0 6px;font-size:18px}
+.thermal-outcomes p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+@media(max-width:900px){.thermal-layout{grid-template-columns:1fr;gap:38px}}
+@media(max-width:600px){.thermal-feature{padding:72px 0}.thermal-outcomes{padding:22px}.thermal-copy>p{font-size:15px}.thermal-outcomes h3{font-size:17px}}
+
 /* Brand palette: monochrome to match the supplied Seal Kraft identity */
 :root{--ink:#252223;--muted:#6d6868;--paper:#f5f4f3;--white:#fff;--dark:#211f20;--teal:#302d2e;--line:#dedbd9;--gold:#99918c}
 body{color:var(--ink);background:var(--paper)}
