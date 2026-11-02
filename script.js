@@ -29,7 +29,7 @@ if('IntersectionObserver' in window){
     revealObserver.unobserve(entry.target);
    }
   });
- },{threshold:.12,rootMargin:'0px 0px -40px'});
+ },{threshold:0,rootMargin:'0px 0px -40px 0px'});
  revealItems.forEach(item=>revealObserver.observe(item));
 }else{
  revealItems.forEach(item=>item.classList.add('is-visible'));
