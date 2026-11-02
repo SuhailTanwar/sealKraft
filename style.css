@@ -34,6 +34,52 @@
 @media(max-width:900px){.site-header{height:76px}.nav-links.open{top:76px;box-shadow:0 16px 24px rgba(7,17,23,.12)}.nav-links a{padding:8px 0}.hero-content{padding:55px 0}.hero h1{font-size:clamp(50px,9vw,76px)}}
 @media(max-width:600px){.topline{font-size:9px}.site-header{height:70px}.nav-links.open{top:70px}.logo b{font-size:17px}.logo small{font-size:6px}.hero{min-height:640px}.hero p{font-size:15px}.hero-stats{gap:16px}.hero-stats b{font-size:19px}.hero-actions .btn{width:100%}.floating-action{bottom:16px;width:50px;height:50px}.call{left:16px}.wa{right:16px}}
 
+/* Brand palette: monochrome to match the supplied Seal Kraft identity */
+:root{--ink:#252223;--muted:#6d6868;--paper:#f5f4f3;--white:#fff;--dark:#211f20;--teal:#302d2e;--line:#dedbd9;--gold:#99918c}
+body{color:var(--ink);background:var(--paper)}
+.topline{background:#211f20;color:#d4d0ce}
+.site-header{border-bottom-color:#e2dfdd}
+.nav-links a:not(.nav-button):hover,.link,.eyebrow,.service-icon,.service-arrow,.cap-grid span,.service-list .service-number,.contact-details small{color:#393536}
+.nav-links a:not(.nav-button):after{background:#393536}
+.nav-button,.primary{background:#252223;color:#fff}
+.nav-button:hover,.primary:hover{background:#454142}
+.outline{border-color:rgba(255,255,255,.62)}
+.light{background:#eeecea;color:#252223}
+.hero-shade{background:linear-gradient(90deg,rgba(24,22,22,.95),rgba(24,22,22,.72) 55%,rgba(24,22,22,.24))}
+.hero h1 em{color:#e4dfdc}
+.hero-stats b{color:#fff}
+.services-preview,.testimonials,.services-catalog{background:#f1efed}
+.service-card:hover{background:#252223;color:#fff}
+.service-card:hover .service-icon,.service-card:hover .service-arrow{color:#fff}
+.service-grid{border-color:#dedbd9}
+.service-card{border-color:#e2dfdd}
+.split-banner{background:#211f20}
+.split-photo{filter:grayscale(.45) saturate(.55)}
+.eyebrow.light{color:#d0cbc8}
+.split-copy li{border-bottom-color:#454142}
+.split-copy li:before{color:#d0c8c2}
+.client-logo{border-color:#e2dfdd}
+.text-logo{color:#8e8885}
+.video-card{border-color:#e2dfdd}
+.video-thumb{background:linear-gradient(135deg,#3a3738,#171516)}
+.play{color:#302d2e}
+.video-copy small{color:#393536}
+.cta{background:#302d2e}
+.footer{background:#211f20}
+.footer-bottom{border-top-color:#454142}
+.page-hero{background:linear-gradient(120deg,#211f20,#393536)}
+.three-values>div{border-top-color:#5a5554}
+.three-values b{color:#d2cbc7}
+.civil-grid article{background:#f6f5f4;border-color:#dedbd9}
+.civil-grid span{color:#393536}
+.featured-service{background:linear-gradient(120deg,#252223,#454142);border-color:#5d5755}
+.featured-service-label,.featured-service-mark{color:#d2cbc7}
+.featured-service-mark i{background:#c7c0bb}
+.services-catalog .service-list article:hover{border-color:#aaa29d}
+.floating-action.call{background:linear-gradient(145deg,#454142,#211f20)}
+.call.floating-action{background:linear-gradient(145deg,#454142,#211f20)}
+.footer-logo .logo-symbol,.footer-logo .logo-wordmark{filter:invert(1)}
+
 .logo{gap:9px;flex-shrink:0}
 .logo-symbol{display:block;width:46px;height:46px;object-fit:contain;flex:0 0 auto}
 .logo-wordmark{display:block;width:248px;height:auto;object-fit:contain}
